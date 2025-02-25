@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIF Display</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #bd24b5;
+            position: relative;
+        }
+        .gif-container {
+            text-align: center;
+        }
+        img {
+            width: 500px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .redirect-button {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .redirect-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        function redirectToCountdown() {
+            window.location.href = 'countdown.html';
+        }
+    </script>
+</head>
+<body>
+    <div class="gif-container">
+        <img src="https://i.pinimg.com/originals/d5/09/10/d50910c360fecc919a03772bd15947b2.gif" alt="Funny GIF">
+    </div>
+    <button class="redirect-button" onclick="redirectToCountdown()">click</button>
+</body>
+</html>
